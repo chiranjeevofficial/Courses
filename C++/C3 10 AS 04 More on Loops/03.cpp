@@ -11,7 +11,7 @@ int main()
         f=a+b;
         a=b;
         b=f;
-        cout<< f << " ";
+        cout<<f<<endl;
         n--;
     }
     return 0;

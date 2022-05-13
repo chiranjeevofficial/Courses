@@ -1,4 +1,4 @@
-//04. Write a C++ program to calculate HCF of two numbers.
+//05. Write a C++ program to calculate HCF of two numbers.
 #include<iostream>
 using namespace std;
 int main()

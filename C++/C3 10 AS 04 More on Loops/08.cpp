@@ -1,4 +1,4 @@
-//07. Write a C++ program to print binary of a given decimal number.
+//08. Write a C++ program to print octal of a given decimal number.
 #include<iostream>
 using namespace std;
 int main()

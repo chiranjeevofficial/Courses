@@ -8,6 +8,8 @@ class item
 };
 int main()
 {
-    cout<<a;    //error a is not declare in scope
+    item i1, i2;
+    i1.a=5;
+    cout<<i2.a;    //error a is not declare in scope
     return 0;
 }

@@ -1,128 +1,74 @@
 #include<iostream>
+#include "function.cpp"
 using namespace std;
-//Functions Declarations
-float areaOfCircle(float);
-int checkEvenOdd(int);
-int checkPrimeOrNot(int);
-int nextPrime(int);
-int betweenPrime(int, int);
-int fact(int);
-int permutation(int, int);
-int combination(int, int);
-int LCM(int, int);
-int HCF(int, int);
-void fibonacci(int);
-
-//  1. Write a function to calculate area of circle. (TSRS)
-float areaOfCircle(float radius)
+int main()
 {
-    return 3.14*radius*radius;
-}
+    int x;
+    cout<<"Calculate area of circle"<<endl;
+    cout<<"Enter a radius of circle: : ";
+    cin>>x;
+    cout<<"Area of Circle is: "<<areaOfCircle(x)<<endl;
 
-//  2. Write a function to check whether a given number is even or odd.
-//  Return 1 if number is even, otherwise return 0. (TSRS)
-int checkEvenOdd(int n)
-{
-    if(n%2==0)
-        return 1;
+    cout<<endl<<"Check whether number is Even or Odd"<<endl;
+    cout<<"Enter a number: ";
+    cin>>x;
+    if(checkEvenOdd(x))
+        cout<<x<<" is Odd Number"<<endl;
     else
-        return 0;
-}
+        cout<<x<<" is Even Number"<<endl;
 
-//  3. Write a function to check whether a given number is Prime or not.
-//  Return 1 if number is Prime, otherwise return 0. (TSRS)
-int checkPrimeOrNot(int n)
-{
-    int i;
-    for(i=2;i<=n-1;i++)
-    {
-        if(n%i==0)
-            break;
-    }
-    if(i==n)
-        return 1;
+    cout<<endl<<"Check whether number is Prime or Not"<<endl;
+    cout<<"Enter a number: ";
+    cin>>x;
+    if(checkPrimeOrNot(x))
+        cout<<x<<" is Not Prime Number"<<endl;
     else
-        return 0;
-}
+        cout<<x<<" is Prime Number"<<endl;
 
-//  4. Write a function to find next Prime number of a given number. (TSRS)
-/*int nextPrime(int n)
-{
-    // Pending //
-}
+    cout<<endl<<"Find next Prime number of a number"<<endl;
+    cout<<"Sorry! This Function is under Construction"<<endl;
 
-//  5. Write a function to print all prime numbers between two given numbers. (TSRS)
-int betweenPrime(int x, int y)
-{
-    // Pending //
-}
-*/
+    cout<<endl<<"Find all Prime Number between given range"<<endl;
+    cout<<"Sorry! This Function is under Construction"<<endl;
 
-//  6. Write a function to calculate factorial of a number. (TSRS)
-int fact(int n)
-{
-    int fact=1;
-    while(n)
-    {
-        fact=fact*n;
-        n--;
-    }
-    return fact;
-}
+    cout<<endl<<"Calculate Factorial of Number"<<endl;
+    cout<<"Enter a number: ";
+    cin>>x;
+    cout<<"Factorial of "<<x<<" is: "<<fact(x);
 
-//  7. Write a function to calculate permutation of arranging r items out of n items. (TSRS)
-int permutation(int totalObject, int selectedObject)
-{
-    return fact(totalObject)/fact(totalObject-selectedObject);
-}
+    cout<<endl<<"Calculate Permutation of N Numbers of Object"<<endl;
+    cout<<"Enter total number of objects: ";
+    cin>>x;
+    int y;
+    cout<<"Enter selected number of objects: ";
+    cin>>y;
+    cout<<"Number of Permutation is: "<<permutation(x,y)<<endl;
 
-//  8. Write a function to calculate combinations of selecting r items out of n items. (TSRS)
-int combination(int totalObject, int selectedObject)
-{
-    return fact(totalObject)/(fact(selectedObject)*fact(totalObject-selectedObject));
-}
+    cout<<endl<<"Calculate Combination of N Numbers of Object"<<endl;
+    cout<<"Enter total number of objects: ";
+    cin>>x;
+    cout<<"Enter choosing number of objects in the set: ";
+    cin>>y;
+    cout<<"Number of Combination is: "<<combination(x,y)<<endl;
 
-//  9. Write a function to print Pascal Triangle. (TSRS)
-/*
-    <!-- Pending -->
-*/
 
-//  10. Write a function to calculate LCM of two numbers. (TSRS)
-int LCM(int x, int y)
-{
-    int LCM;
-    for(LCM=1;LCM<=x*y;LCM++)
-    {
-        if(LCM%x==0&&LCM%y==0)
-            break;
-    }
-    return LCM;
-}
+    cout<<endl<<"Print pascal Triangle"<<endl;
+    cout<<"Sorry! This Function is under Construction"<<endl;
 
-//  11. Write a function to calculate HCF of two numbers. (TSRS)
-int HCF(int a, int b)
-{
-    int HCF;
-    for(HCF=(a<b)?a:b;HCF>=1;HCF--)
-    {
-        if(a%HCF==0&&b%HCF==0)
-            break;
-    }
-    return HCF;
-}
+    cout<<endl<<"Calculate LCM of two numbers"<<endl;
+    cout<<"Enter two numbers: ";
+    cin>>x>>y;
+    cout<<"LCM of "<<x<<" & "<<y<<" is: "<<LCM(x,y);
 
-//  12. Write a function to print first N terms of Fibonacci series. (TSRN)
-void fibonacci(int n)
-{
-    int a = -1, b = 1, fibo;
+    cout<<endl<<"Calculate HCF of two numbers"<<endl;
+    cout<<"Enter two numbers: ";
+    cin>>x>>y;
+    cout<<"HCF of "<<x<<" & "<<y<<" is: "<<HCF(x,y);
 
-    while(n)
-    {
-        fibo=a+b;
-        cout<<fibo<<" ";
-        a=b;
-        b=fibo;
-        n--;
-    }
-    cout<<endl;
+    cout<<endl<<"Print n terms of Fibonacci Series"<<endl;
+    cout<<"Enter 1 to nth term to print Fibonacci series: ";
+    cin>>x;
+
+    cout<<endl<<"Thank You"<<endl<<"Please Visit Again"<<endl;
+    return 0;
 }

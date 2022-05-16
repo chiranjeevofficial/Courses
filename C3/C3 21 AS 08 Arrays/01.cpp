@@ -1,7 +1,7 @@
 /*
-    1. Define a class Array, which contains an int array of size 10 as instance
-    member variable. Now define the following member functions to access
-    this array:
+    01. Define a class Array, which contains an int array of size 10 as instance
+        member variable. Now define the following member functions to access
+        this array:
         a. inputArrayElements();
         b. findMaxElement();
         c. findMinElement();

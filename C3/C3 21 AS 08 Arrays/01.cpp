@@ -61,7 +61,22 @@ public:
         return minEle;
     }
 
-    // <!-- sort() under construction -->
+    void bubble_sort()
+    {
+        int i, j, temp=0;
+        for(i=0;i<10;i++)
+        {
+            for(j=0;j<9;j++)
+            {
+                if(element[j]>element[j+1])
+                {
+                    temp=element[j];
+                    element[j]=element[j+1];
+                    element[j+1]=temp;
+                }
+            }
+        }
+    }
 
     void editElement(int index, int newData)
     {
@@ -87,7 +102,7 @@ int main()
 {
     Array A1;
     A1.inputArrayElements();
-    int x, y;
+    /*int x, y;
     cout<<"Maximum Element is: "<<A1.findMaxElement()<<endl;
     cout<<"Minimum Element is: "<<A1.findMinElement()<<endl;
     cout<<"Enter Index Value & New Data for edit the element: ";
@@ -96,4 +111,8 @@ int main()
     A1.outputArrayElement();
     cout<<"Sum of Elements is: "<<A1.sumOfElement();
     cout<<"Average of Elements is: "<<A1.averageOfElements();
+    */
+    A1.bubble_sort();
+    cout<<endl<<"Sorted Array is: \n";
+    A1.outputArrayElement();
 }

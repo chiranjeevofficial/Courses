@@ -73,9 +73,10 @@ int main()
     emp1.setEmployeeID(1001);
     emp1.setEmployeeName("Chiranjeev");
     emp1.setEmployeeSalary(70000.00);
-    cout<<"Employee ID: "<<emp1.getEmpID()<<endl;
-    cout<<"Employee Name: "<<emp1.getName()<<endl;
-    cout<<"Employee Salary: "<<emp1.getSalary()<<endl<<endl;
+    cout<<"Employee Details are: "<<endl;
+    cout<<" - Employee ID     : "<<emp1.getEmpID()<<endl;
+    cout<<" - Employee Name   : "<<emp1.getName()<<endl;
+    cout<<" - Employee Salary : "<<emp1.getSalary()<<endl<<endl;
 
     emp2.setEmployee(1002,"Amit",10000.0);
     emp2.showEmployee();

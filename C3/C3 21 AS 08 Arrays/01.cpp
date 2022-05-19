@@ -102,17 +102,16 @@ int main()
 {
     Array A1;
     A1.inputArrayElements();
-    /*int x, y;
+    int x, y;
     cout<<"Maximum Element is: "<<A1.findMaxElement()<<endl;
     cout<<"Minimum Element is: "<<A1.findMinElement()<<endl;
     cout<<"Enter Index Value & New Data for edit the element: ";
     cin>>x>>y;
     A1.editElement(x, y);
     A1.outputArrayElement();
-    cout<<"Sum of Elements is: "<<A1.sumOfElement();
-    cout<<"Average of Elements is: "<<A1.averageOfElements();
-    */
-    A1.bubble_sort();
+    cout<<"Sum of Elements is: "<<A1.sumOfElement()<<endl;
+    cout<<"Average of Elements is: "<<A1.averageOfElements()<<endl;
     cout<<endl<<"Sorted Array is: \n";
+    A1.bubble_sort();
     A1.outputArrayElement();
 }

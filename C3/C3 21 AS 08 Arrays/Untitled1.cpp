@@ -3,13 +3,14 @@
 int main()
 {
     char name[20];
-    int i, sum=0;
+    int i=0, sum=0;
     printf("Enter your name: ");
-    for(i=0;i<20;i++)
+    gets(name);
+    while(name[i]!=NULL)
     {
-        name[i]=getche();
         sum=name[i]+sum;
+        i++;
     }
-    printf("\nSum of total ASCII Value: %d",sum);
+    printf("Sum of total ASCII Value: %d",sum);
     return 0;
 }

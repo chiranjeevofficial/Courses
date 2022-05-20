@@ -9,6 +9,7 @@
 #include<iostream>
 #include<string.h>
 #include<conio.h>
+#include<stdlib.h>
 using namespace std;
 class Employee
 {
@@ -17,14 +18,14 @@ private:
     char name[20];
     float salary;
 public:
-    Employee()
+    Employee()  //Constructor
     {
         empid=1001;
-        strcpy(name,"Name  ");
+        strcpy(name,"Chiranjeev Kashyap");
         salary=20000;
     }
 
-    static setEmployeeByUser(Employee e[], int noOfUser)
+    static setEmployeeByUser(Employee e[], int noOfUser)    //Set Employee Manually
     {
         int i;
         for(i=0;i<noOfUser;i++)
@@ -41,9 +42,10 @@ public:
             cin>>e[i].salary;
             cout<<endl;
         }
+        system("cls");
     }
 
-    static void sortEmployeeBySalary(Employee e[], int noOfUser)
+    static void sortEmployeeBySalary(Employee e[], int noOfUser)    //Sort Employee By Salary
     {
         cout<<"Employee Sort By Salary: "<<endl;
         int i, j;
@@ -62,7 +64,7 @@ public:
         }
     }
 
-    static void sortEmployeeById(Employee e[], int noOfUser)
+    static void sortEmployeeById(Employee e[], int noOfUser)    //Set Employee By ID
     {
         cout<<"Employee Sort By ID: "<<endl;
         int i, j;
@@ -81,12 +83,12 @@ public:
         }
     }
 
-    int sumOfCharacter(Employee e)
+    int sumOfCharacter()
     {
-        int i, sum=0;
-        while(e.name[i]!=NULL)
+        int i=0, sum=0;
+        while(name[i]!=NULL)
         {
-            sum=e.name[i]+sum;
+            sum=name[i]+sum;
             i++;
         }
         return sum;
@@ -94,6 +96,7 @@ public:
 
     static void sortEmployeeByName(Employee e[], int noOfUser)
     {
+        cout<<"Employee Sort By Name: "<<endl;
         int i, j;
         for(i=0;i<noOfUser;i++)
         {
@@ -113,21 +116,19 @@ public:
     static void displayEmployee(Employee e[], int noOfUser)
     {
         int i;
+        cout<<"Employee Details: "<<endl;     //Display Employee in Paragrapgh
         cout<<"+------+--------+--------+"<<endl;
         cout<<"| ID   | Name   | Salary |"<<endl;
         cout<<"+------+--------+--------+"<<endl;
         for(i=0;i<noOfUser;i++)
         {
-            /*cout<<"Employee Details: "<<endl;
-            cout<<"Employee ID     : "<<e[i].empid<<endl;
-            cout<<"Employee Name   : "<<e[i].name<<endl;
-            cout<<"Employee Salary : "<<e[i].salary<<endl<<endl;*/
             cout<<"| "<<e[i].empid<<" |";
             cout<<" "<<e[i].name<<" |";
             cout<<" "<<e[i].salary<<"  |"<<endl;
             cout<<"+------+--------+--------+"<<endl;
         }
-        cout<<endl;
+        getch();
+        system("cls");
     }
 };
 int main()
@@ -137,9 +138,11 @@ int main()
     cin>>n;
     Employee EMP[n];
     Employee::setEmployeeByUser(EMP,n);
+    Employee::displayEmployee(EMP,n);
     Employee::sortEmployeeById(EMP,n);
     Employee::displayEmployee(EMP,n);
     Employee::sortEmployeeBySalary(EMP,n);
     Employee::displayEmployee(EMP,n);
-    //getch();
+    Employee::sortEmployeeByName(EMP,n);
+    Employee::displayEmployee(EMP,n);
 }

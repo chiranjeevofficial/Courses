@@ -13,17 +13,17 @@ int main()
     cout<<"Enter a number: ";
     cin>>x;
     if(checkEvenOdd(x))
-        cout<<x<<" is Odd Number"<<endl;
-    else
         cout<<x<<" is Even Number"<<endl;
+    else
+        cout<<x<<" is Odd Number"<<endl;
 
     cout<<endl<<"Check whether number is Prime or Not"<<endl;
     cout<<"Enter a number: ";
     cin>>x;
     if(checkPrimeOrNot(x))
-        cout<<x<<" is Not Prime Number"<<endl;
-    else
         cout<<x<<" is Prime Number"<<endl;
+    else
+        cout<<x<<" is Not Prime Number"<<endl;
 
     cout<<endl<<"Find next Prime number of a number"<<endl;
     cout<<"Sorry! This Function is under Construction"<<endl;
@@ -34,7 +34,7 @@ int main()
     cout<<endl<<"Calculate Factorial of Number"<<endl;
     cout<<"Enter a number: ";
     cin>>x;
-    cout<<"Factorial of "<<x<<" is: "<<fact(x);
+    cout<<"Factorial of "<<x<<" is: "<<fact(x)<<endl;
 
     cout<<endl<<"Calculate Permutation of N Numbers of Object"<<endl;
     cout<<"Enter total number of objects: ";
@@ -58,16 +58,17 @@ int main()
     cout<<endl<<"Calculate LCM of two numbers"<<endl;
     cout<<"Enter two numbers: ";
     cin>>x>>y;
-    cout<<"LCM of "<<x<<" & "<<y<<" is: "<<LCM(x,y);
+    cout<<"LCM of "<<x<<" & "<<y<<" is: "<<LCM(x,y)<<endl;
 
     cout<<endl<<"Calculate HCF of two numbers"<<endl;
     cout<<"Enter two numbers: ";
     cin>>x>>y;
-    cout<<"HCF of "<<x<<" & "<<y<<" is: "<<HCF(x,y);
+    cout<<"HCF of "<<x<<" & "<<y<<" is: "<<HCF(x,y)<<endl;
 
     cout<<endl<<"Print n terms of Fibonacci Series"<<endl;
     cout<<"Enter 1 to nth term to print Fibonacci series: ";
     cin>>x;
+    fibonacci(x);
 
     cout<<endl<<"Thank You"<<endl<<"Please Visit Again"<<endl;
     return 0;

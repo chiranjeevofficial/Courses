@@ -21,12 +21,12 @@ class complex
         {
             cout<<a<<"+"<<b<<"i"<<endl;
         }
-        complex add(complex x, complex y)
+        complex add(complex c)
         {
-            complex c;
-            c.a=x.a+y.a;
-            c.b=x.b+y.b;
-            return c;
+            complex temp;
+            temp.a=a+c.a;
+            temp.b=b+c.b;
+            return temp;
         }
 };
 int main()
@@ -36,7 +36,8 @@ int main()
     c1.output();
     c2.input(2,5);
     c2.output();
-    c3=add(c1,c2);
+    //  c3=add(c1,c2); // 'add' was not declared in this scope|
+    c3=c1.add(c2);
     c3.output();
     return 0;
 }

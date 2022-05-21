@@ -17,16 +17,16 @@ class complex
             this->a= a;
             this->b= b;
         }
-        void set()
-        {
-            cout<<"Enter real part of complex number: ";
-            cin>>a;
-            cout<<"Enter imaginary part of complex number: ";
-            cin>>b;
-        }
         void output()
         {
             cout<<a<<"+"<<b<<"i"<<endl;
+        }
+        complex add(complex x, complex y)
+        {
+            complex c;
+            c.a=x.a+y.a;
+            c.b=x.b+y.b;
+            return c;
         }
 };
 int main()
@@ -36,7 +36,7 @@ int main()
     c1.output();
     c2.input(2,5);
     c2.output();
-    c3.set();
+    c3=add(c1,c2);
     c3.output();
     return 0;
 }

@@ -1,5 +1,4 @@
-""" 1. Write a python script to print type of variables. Create 5 variables each containing different type of data.
-(like: 99, True, “Rishikesh”, 2.96, 3+4j) """
+""" 1. Write a python script to print type of variables. Create 5 variables each containing different type of data. (like: 99, True, “Rishikesh”, 2.96, 3+4j) """
 num = 99
 boll = True
 city = "Rishikesh"

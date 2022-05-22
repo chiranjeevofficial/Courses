@@ -1,0 +1,1 @@
+# 06. Write a python script to convert a number from decimal to binary. Number is taken from user.

@@ -1,0 +1,1 @@
+# 08. Write a python script to calculate average of three numbers.

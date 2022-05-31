@@ -47,6 +47,14 @@ public:
         temp.imag=(real*c.imag+imag*c.real);
         return temp;
     }
+
+    complex operator- (complex c)
+    {
+        complex temp;
+        temp.real=real-c.real;
+        temp.imag=imag-c.imag;
+        return temp;
+    }
 };
 
 class time
@@ -93,7 +101,7 @@ public:
         }
     }
 
-    void getValue()
+    void showTime()
     {
         cout<<"Time: "<<H<<": "<<M<<": "<<S<<endl;
     }
@@ -142,22 +150,64 @@ public:
             temp.S=t.S-S;
         return temp;
     }
+
+    void normalizeTime()
+    {
+        while(S>59)
+        {
+            S=S-59;
+            M++;
+        }
+        while(M>59)
+        {
+            M=M-59;
+            H++;
+        }
+        while(H>23)
+        {
+            H=H-23;
+        }
+    }
+};
+
+class Result
+/*
+    03 Define a class Result with instance member variables resulted, totalAttempt,
+    netRight, netWrong, marksForRight, marksForWrong. Define the following member
+    functions:
+    a. setResult () – it takes 5 arguments for all instance variables Set default
+    arguments for marksForRight and marksForWrong.
+    b. showResult ()
+*/
+{
+private:
+    int resulted, totalAttempt, netRight, netWrong, marksForRight, marksForWrong;
+public:
+    setResult()
+    {
+
+    }
 };
 
 int main()
 {
     /*complex c1, c2, c3;
-    c1.setValueManually(3,4);
+    c1.setValueManually(5,7);
     c2.setValueDynamically();
     c1.getValue();
     c2.getValue();
     //c3=c1.sumOfComplex(c2);
     c3=c1+c2;
+    cout<<"Addition of two Complex Number       : ";
     c3.getValue();
     c3=c1*c2;
+    cout<<"Multiplication of two Complex Number : ";
+    c3.getValue();
+    c3=c1-c2;
+    cout<<"Subtraction of two Complex Number    : ";
     c3.getValue();*/
 
-    time t1, t2, t3;
+    /*time t1, t2, t3;
     t1.setTimeManually(13,58,34);
     t2.setValueDynamically();
     t1.getValue();
@@ -167,6 +217,10 @@ int main()
     t3=t1-t2;
     t3.getValue();
     t3=t1>t2;
-    t3.getValue();
+    t3.getValue();*/
+    time t;
+    t.setTimeManually(20,122,88);
+    t.normalizeTime();
+    t.showTime();
     return 0;
 }

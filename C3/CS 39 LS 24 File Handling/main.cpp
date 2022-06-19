@@ -18,11 +18,11 @@ void reading()
         cout<<"File not found...";
     else
     {
-        fin.get();
+        ch=fin.get();
         while(!fin.eof())
         {
             cout<<ch;
-            fin>>ch;
+            ch=fin.get();
         }
     }
     fin.close();

@@ -5,5 +5,6 @@
 ### I provide you **Git Bash Command** Cheat Sheet.
 
 1. Set username on Git Bash
-
-```git config --global user.name "your_name"```
+```
+git config --global user.name "your_name"
+```

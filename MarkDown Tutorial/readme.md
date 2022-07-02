@@ -87,3 +87,8 @@
          - Banana
          - Grapes
          - Orange
+
+## Miscellaneous Tools
+ 1.  Make Copy to Clipboard button for, command, syntax, etc.
+      * Syntax: Prefix 3 Grave Accent Mark on start & end ( ` ).
+      * Example: ```create readme```

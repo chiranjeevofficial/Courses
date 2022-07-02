@@ -113,11 +113,35 @@ git rm file_name.extension
 git status -s
 ```
 
+21. **.gitignore** : ignore some files & folder not not upload on server / untracked.
+    - ( * ).extension : all same extension files are ignore
+    - ( /folder_name ) : specific folder are ignore
+    - ( /file_name.extension ) : thats file are ignore in root directory
 
+22. **git branch branch_name** : its make a copy from last commit.
+```
+git branch branch_name
+```
 
+23. **git branch** : show all branches.
+```
+git branch
+```
 
+24. **git checkout branch_name** : move use branch to another branch
+```
+git checkout branch_name
+```
 
+25. **git merge branch_name** : merge sub branch to **master branch.**
+```
+git merge branch_name
+```
 
+26. **git checkout -b branch_name** : make & move new branch
+```
+git checkout -b branch_name
+```
 
 ---
 

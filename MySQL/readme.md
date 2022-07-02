@@ -67,6 +67,9 @@ Syntax:
     >    variable_nameN data_type key_name
     >
     > );
+```
+create table sample(variableName datatype keyName);
+```
 
 6. Show description of table (structure of table)
 ```

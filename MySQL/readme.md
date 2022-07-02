@@ -19,6 +19,4 @@
     >    3. Hierarchical database.
     >    4. Network database
 
-```
-Hello i'm Chiranjeev
-```
+```Hello i'm Chiranjeev```

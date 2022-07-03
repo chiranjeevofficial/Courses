@@ -102,8 +102,30 @@ select "column_name1,column_name2,...,column_nameN" from "table_name";
 ```
 select * from "table_name" where "condition";
 ```
-> Example:
->
-> select * from student where student_id <= 105;
 
-12. 
+* Example:
+* select * from student where student_id <= 105;
+
+12. This clause remove duplicate values from the table, show all data on table & dont show repeated value
+```
+select distinct ("column_name1, column_name2, ... coulumn_nameN") from "table_name";
+```
+
+13. Sort by clause
+    * by default order is ascending
+    * if use descending order then use (desc) at the end.
+Syntax:
+```
+select * from "table_name" order by "feild_name" "(by deafult aesc/**desc**)";
+```
+
+14. between condition
+```
+select * from "table_name" where "feild_name" between "expression/value" and "expression/value";
+```
+
+15. not between
+```
+select * from "table_name" where "feild_name" not between "expression/value" and "expression/value";
+```
+16. Membership operator **( In / Not In )**

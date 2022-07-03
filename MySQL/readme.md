@@ -76,14 +76,34 @@ create table sample(variableName datatype keyName);
 desc "table_name";
 ```
 
-7. Show data on table
+7. Show all data on table
 ```
 select * from "table_name";
 ```
 
 8. Insert data in table (always insert in table creating order data), char & varchar data is string that prefix and postfix ( " ) doublequotes.
+Query OK, 1 row affected (0.01 sec)
 ```
 insert into table_name" value(data1, data2, ..., dataN);
 ```
 
-9. 
+9. To create a DEFAULT constraint on the column when the table is already created
+```
+ALTER TABLE "table_Name"
+ALTER "table_Name" SET DEFAULT "default_value";
+```
+
+10. Show particular data on table
+```
+select "column_name1,column_name2,...,column_nameN" from "table_name";
+```
+
+11. Set Condition on feild (column), where are represent condition
+```
+select * from "table_name" where "condition";
+```
+> Example:
+>
+> select * from student where student_id <= 105;
+
+12. 

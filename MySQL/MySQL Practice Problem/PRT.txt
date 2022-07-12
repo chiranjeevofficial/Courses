@@ -1,0 +1,56 @@
+Practical 1: Create following table using SQL statements.
+mysql> create table clientTable(
+    -> ClientNo char(6) primary key,
+    -> Name varchar(20) not null,
+    -> City varchar(50) not null,
+    -> Pin int,
+    -> Mobile int not null
+    -> );
+Query OK, 0 rows affected (0.10 sec)
+
+mysql> desc clientTable;
++----------+-------------+------+-----+---------+-------+
+| Field    | Type        | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| ClientNo | int         | NO   | PRI | NULL    |       |
+| Name     | varchar(20) | NO   |     | NULL    |       |
+| City     | varchar(50) | NO   |     | NULL    |       |
+| Pin      | int         | YES  |     | NULL    |       |
+| Mobile   | int         | NO   |     | NULL    |       |
++----------+-------------+------+-----+---------+-------+
+5 rows in set (0.00 sec)
+
+
+
+Practical 2: Insert and display following data in Client table (made in practical1) using SQL statements.
+mysql> insert into clientTable
+    -> (ClientNo, Name, City, Pin, Mobile)
+    -> values ("C11001","Ivan Bayross","Bombay",400054,79834001),
+    -> ("C11002","Vandana Saitwal","Madras",780001,79834002),
+    -> ("C11003","Pramada Jaguste","Bombay",400007,79834003),
+    -> ("C11004","Ravi Shreedharan","Delhi",110020,79834004),
+    -> ("C11005","Rukmani","Kolkata",340003,79834005),
+    -> ("C11006","Pradeep Singhania","Jaipur",130102,79834006),
+    -> ("C11007","Geoge Paul","Kolkata",340010,79834007),
+    -> ("C11008","D Ravichandran","Bombay",400014,79834008);
+Query OK, 8 rows affected (0.02 sec)
+Records: 8  Duplicates: 0  Warnings: 0
+
+mysql> select * from ClientTable;
++----------+-------------------+---------+--------+----------+
+| ClientNo | Name              | City    | Pin    | Mobile   |
++----------+-------------------+---------+--------+----------+
+| C11001   | Ivan Bayross      | Bombay  | 400054 | 79834001 |
+| C11002   | Vandana Saitwal   | Madras  | 780001 | 79834002 |
+| C11003   | Pramada Jaguste   | Bombay  | 400007 | 79834003 |
+| C11004   | Ravi Shreedharan  | Delhi   | 110020 | 79834004 |
+| C11005   | Rukmani           | Kolkata | 340003 | 79834005 |
+| C11006   | Pradeep Singhania | Jaipur  | 130102 | 79834006 |
+| C11007   | Geoge Paul        | Kolkata | 340010 | 79834007 |
+| C11008   | D Ravichandran    | Bombay  | 400014 | 79834008 |
++----------+-------------------+---------+--------+----------+
+8 rows in set (0.00 sec)
+
+
+
+Practical 3: Display the name of those clients whose name contains ‘van’ (refer table ‘Client’ of Practical 2)

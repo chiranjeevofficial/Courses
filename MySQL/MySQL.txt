@@ -126,3 +126,12 @@ How to change feild property :
 Syntax:
 	ALTER TABLE tableName
 	-> ALTER feildName SET property value;
+
+Example:
+mysql> Alter table student
+    -> Alter Gender SET DEFAULT 'M';
+Query OK, 0 rows affected (0.06 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+---
+

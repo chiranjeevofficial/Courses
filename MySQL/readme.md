@@ -130,7 +130,21 @@ select * from "table_name" where "feild_name" not between "expression/value" and
 ```
 16. Membership operator **( In / Not In )**
 
-17. Select specific column where eleement start from specific character:
+17. Select column where element start from specific character:
 ```
-select * from "table_name" where "column_name" like 'spec_char%';
+select * from "table_name" where "column_name" like 'specific_character%';
+```
+
+18. Select column where element start & end from specific character:
+```
+select * from "table_name" where "column_name" like '%specific_character%';
+```
+19. How to rename table
+```
+alter table "old_table_name" rename to "new_table_name";
+```
+
+20. Select column where element are not "value":
+```
+select * from 'table_name' where not "column_name" = 'value';
 ```

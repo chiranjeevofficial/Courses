@@ -129,3 +129,8 @@ select * from "table_name" where "feild_name" between "expression/value" and "ex
 select * from "table_name" where "feild_name" not between "expression/value" and "expression/value";
 ```
 16. Membership operator **( In / Not In )**
+
+17. Select specific column where eleement start from specific character:
+```
+select * from "table_name" where "column_name" like 'spec_char%';
+```

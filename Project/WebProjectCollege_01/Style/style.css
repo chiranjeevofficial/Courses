@@ -1,0 +1,30 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: sans-serif;
+}
+
+nav .menu{
+    border-bottom: 1px solid #000000;
+}
+
+nav .menu ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: right;
+}    
+
+nav .menu ul li{
+    padding: 10px 20px 10px 5px;
+}
+
+nav .menu ul li a{
+    font-weight: lighter;
+    text-decoration: none;
+    color: #ff4500;
+    transition: .5s ease-in-out;
+}
+
+nav .menu ul li a:hover{
+    text-decoration: underline;
+}

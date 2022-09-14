@@ -1,6 +1,5 @@
 //7. Write a program to calculate area of a rectangle. Take length and breadth from user
-main()
-{
+main(){
     float l, b;
     printf("Enter length & breadth of rectangle: ");
     scanf("%f%f",&l,&b);

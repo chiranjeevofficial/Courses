@@ -1,6 +1,5 @@
 //2. Write a program to swap values of two int variables without using third variable
-main()
-{
+main(){
     int a, b;
     printf("Enter two values: ");
     scanf("%d%d",&a,&b);

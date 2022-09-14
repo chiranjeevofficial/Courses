@@ -1,6 +1,5 @@
 //1. Write a program to swap values of two int variables
-main()
-{
+main(){
     int a, b, c;
     printf("Enter two values: ");
     scanf("%d%d",&a,&b);

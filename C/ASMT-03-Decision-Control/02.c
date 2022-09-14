@@ -1,6 +1,5 @@
 //2. Write a program to check whether a given number is divisible by 5 or not
-main()
-{
+main(){
     int n;
     printf("Enter a number: ");
     scanf("%d",&n);

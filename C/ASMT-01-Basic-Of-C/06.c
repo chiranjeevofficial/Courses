@@ -1,6 +1,5 @@
 //6. Write a program to calculate area of a circle. Take radius as an input from user
-main()
-{
+main(){
     float r;
     printf("Enter a radius of Circle: ");
     scanf("%f",&r);

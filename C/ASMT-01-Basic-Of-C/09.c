@@ -1,6 +1,5 @@
 //9. Write a program to calculate simple interest. Take user input
-main()
-{
+main(){
     float amt, rate;
     int time;
     printf("Enter a total amount: ");

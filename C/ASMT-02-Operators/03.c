@@ -1,6 +1,5 @@
 //3. Write a program to print last digit of a given number
-main()
-{
+main(){
     int n;
     printf("Enter a number: ");
     scanf("%d",&n);

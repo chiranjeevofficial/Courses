@@ -1,6 +1,5 @@
 //10. Write a program to calculate average of three numbers
-main()
-{
+main(){
     int a1, a2, a3;
     printf("Enter three numbers: ");
     scanf("%d%d%d",&a1,&a2,&a3);

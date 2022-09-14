@@ -1,6 +1,5 @@
 //4. Write a program to print a given number but without last digit
-main()
-{
+main(){
     int n;
     printf("Enter a number: ");
     scanf("%d",&n);

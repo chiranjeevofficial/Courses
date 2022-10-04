@@ -13,6 +13,8 @@
 
  - [TutorialsPoint - Java-Script](https://bit.ly/3NJBKi6)
 
+ - [TutorialsPoint - Java](https://bit.ly/3EaJpnY)
+
 ## Source By Me
  - [C Language Syllabus Namaste-Coder](https://bit.ly/3MZyZZZ)
- - [CodeBlocks](https://www.fosshub.com/Code-Blocks.html?dwl=codeblocks-20.03mingw-setup.exe)
+ - [Download CodeBlocks](https://www.fosshub.com/Code-Blocks.html?dwl=codeblocks-20.03mingw-setup.exe)

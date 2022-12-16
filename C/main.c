@@ -1,15 +1,11 @@
-main(){
-    for(int i=5;i;i--)
-        printf("%d ",i);
+main()
+{
+    int value, result;
+    printf("Enter a number: ");
+    scanf("%d",&value);
+    printf("Square of %d is: ",value);
+    value=sqrt(value);
+    printf("%.2lf\n",value);
+    result=value;
+    printf("Result: %d",result);
 }
-/*
-main(){
-    desc(5);
-}
-void desc(int k){
-    if(k){
-        printf("%d ",k);
-        desc(--k);
-    }
-}
-*/

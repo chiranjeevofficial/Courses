@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            padding: 4px;
+            margin: 0;
+            font-family: sans-serif;
+            font-size: 20px;
+        }
+        
+        .container {
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 1px solid black;
+            border-radius: 20px;
+        }
+        
+        .container form button {
+            margin: 20px 0 20px 130px;
+            padding: 10px 20px;
+            border: 1px solid black;
+            border-radius: 20px;
+        }
+        
+        .container #title {
+            margin: 10px 0;
+            display: grid;
+            text-align: center;
+            font-weight: bold;
+            color: #ff5100;
+        }
+    </style>
+    <title>Registration Form</title>
+</head>
+<body>
+    <div class="container">
+        <span id="title">Student Registration Form</span>
+        <form action="RegistrationServlet" method="post">
+            <table>
+                <tr>
+                    <td><span class="label">First Name &nbsp;</span></td>
+                    <td><input type="text" name="firstName" required></td>
+                </tr>
+                <tr>
+                    <td><span class="label">Last Name &nbsp;</span></td>
+                    <td><input type="text" name="lastName" required></td>
+                </tr>
+                <tr>
+                    <td><span class="label">Age  &nbsp;</span></td>
+                    <td><input type="text" name="age" required></td>
+                </tr>
+            </table>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

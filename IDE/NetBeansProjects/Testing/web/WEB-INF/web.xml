@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="6.0" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd">
+    <welcome-file-list>
+        <welcome-file>AdditionCalc.html</welcome-file>
+        <!--<welcome-file>index.html</welcome-file>-->
+        <!--<welcome-file>RegistrationForm.html</welcome-file>-->
+    </welcome-file-list>
+    <servlet-mapping>
+        <servlet-name>AdditionServlet</servlet-name>
+        <url-pattern>/AdditionServlet</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>30</session-timeout>
+    </session-config>
+    <!--servlet declaration-->
+    <servlet>
+        <servlet-name>first</servlet-name>
+        <servlet-class>com.servlets.FirstServlet</servlet-class>
+    </servlet>
+    <!--mapping-->
+    <servlet>
+        <servlet-name>AdditionServlet</servlet-name>
+        <servlet-class>com.servlets.AdditionServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>first</servlet-name>
+        <url-pattern>/web</url-pattern>
+    </servlet-mapping>
+    <!--servlet declaration-->
+    <servlet>
+        <servlet-name>second</servlet-name>
+        <servlet-class>com.servlets.SecondServlet</servlet-class>
+    </servlet>
+    <!--mapping-->
+    <servlet-mapping>
+        <servlet-name>second</servlet-name>
+        <url-pattern>/second</url-pattern>
+    </servlet-mapping>
+    <!--servlet declaration-->
+    <servlet>
+        <servlet-name>third</servlet-name>
+        <servlet-class>com.servlets.ThirdServlet</servlet-class>
+    </servlet>
+    <!--mapping-->
+    <servlet-mapping>
+        <servlet-name>third</servlet-name>
+        <url-pattern>/third</url-pattern>
+    </servlet-mapping>
+    <!--servlet declaration-->
+    <servlet>
+        <servlet-name>register</servlet-name>
+        <servlet-class>com.servlets.RegistrationServlet</servlet-class>
+    </servlet>
+    <!--mapping-->
+    <servlet-mapping>
+        <servlet-name>register</servlet-name>
+        <url-pattern>/RegistrationServlet</url-pattern>
+    </servlet-mapping>
+    <!--servlet declaration-->
+    <servlet>
+        <servlet-name>success</servlet-name>
+        <servlet-class>com.servlets.SuccessServlet</servlet-class>
+    </servlet>
+    <!--mapping-->
+    <servlet-mapping>
+        <servlet-name>success</servlet-name>
+        <url-pattern>/SuccessServlet</url-pattern>
+    </servlet-mapping>
+</web-app>

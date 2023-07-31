@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 500px;
+    border: 1px solid red;
+    display: flex;
+    /* flex-direction: row; "by default" */
+    /* flex-direction: row; */
+    /* flex-wrap: nowrap; "by default" */
+    /* flex-wrap: wrap; (when you want to all container element get equal width but parent container can't have possible width then, element element set the equal width that are you set.) */
+    /* flex-wrap: wrap-reverse; */
+    /* flex-wrap: wrap; */
+    /* gap: 10px; (its used to set gap between container element and by default one value is set as row and column same)*/
+    gap: 10px;
+    /* row-gap: 10px; */
+    /* column-gap: 10px; */
+    /* flex-flow: <flex-direction> && <flex-wrap>; */
+    /* flex-flow: row nowrap; "by default" */
+    flex-flow: row wrap;
+    /* justify-content: flex-start; "by default" */
+    /* justify-content: flex-end; (each elements are set right side of the conatiner and its work on "X-Axis") */
+    /* justify-content: center; (to set elements in the center of the container) */
+    justify-content: center;
+    /* justify-content: stretch; */
+    /* justify-content: space-around; (its divide extra space from container elements around) */
+    /* justify-content: space-between; (its divide extra space from container elements between) */
+    /* justify-content: space-evenly; (its divide extra space from container elements evenly, like each element left and right side space are same.) */
+    align-items: center;
+}
+
+.box {
+    border: 1px solid blue;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100px; */
+    /* margin: 10px; */
+}
+
+#box-1 {
+    /* order: 0; "by default" (its stand on -ve and +ve scale or you can set child elements order) */
+    order: 1;
+    background-color: red;
+}
+
+#box-2 {
+    order: 3;
+    background-color: yellow;
+}
+
+#box-3 {
+    order: 3x;
+    background-color: skyblue;
+}    
+
+#box-4 {
+    order: 3;
+    background-color: violet;
+}

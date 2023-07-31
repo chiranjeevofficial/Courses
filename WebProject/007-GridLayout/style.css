@@ -1,0 +1,66 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 400px;
+    border: 1px solid red;
+    display: grid;
+    /* gap: 10px; (its used to set space between the element) */
+    row-gap: 10px;
+    column-gap: 10px;
+    grid-template-areas: "h h h"
+                        "s m m"
+                        "f f f";
+    /* grid-template-columns: 200px 200px 200px; */
+    /* grid-template-columns: ; */
+    /* grid-template-columns: repeat(4, 1fr); */
+    /* grid-template-columns: repeat(auto-fill, 1fr); */
+    /* grid-template-columns: auto auto; */
+    /* grid-template-columns: 100px auto; */
+    /* grid-template-columns: 100px 1fr auto; */
+    /* grid-template-rows: 100px; (set height for the rows)  */
+    /* grid-template-rows: 100px 100px 100px;  */
+    /* grid-auto-rows: 190px; (set row height which height is auto) */
+    /* grid-auto-rows: 190px; */
+    /* justify-content: start; "by default" element start from the start of the container. */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* align-content: center; */
+}
+
+.box {
+    border: 2px solid green;
+    padding: 10px;
+}
+
+#box-1 {
+    background-color: aqua;
+    /* justify-self: stretch; "by default" */
+    /* justify-self: start; */
+    /* align-self: stretch; "by default" */
+    /* align-self: start; */
+    
+    /* grid-column-start: 1; */
+    /* grid-column-end: 1; */
+    
+    /* grid-column: 1 / span 2; */
+    /* grid-row: 1 / span 2; */
+
+    /* grid-area: 1 / 1 / span 2 / span 2; */
+    grid-area: h;
+}
+
+#box-2 {
+    grid-area: s;
+}
+
+#box-3 {
+    grid-area: m;
+}
+
+#box-4 {
+    grid-area: f;
+}

@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: red;
+}
+
+@media (min-width: 200px) {
+    body {
+        background-color: gold;
+    }
+}
+
+@media (min-width: 400px) {
+    body {
+        background-color: aqua;
+    }    
+}    
+
+/*
+@media (device width condition in pixel(px))
+@media (orientation: portrait/landscape) when device height > device width
+
+@media (max-width: 200px)
+read as max-width :: up-to value < x
+read as min-width :: starting-from value > x
+
+@media query have the three type: screen, print and all
+*/

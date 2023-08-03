@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --border-color: #ccc;
+    --primary-background-color: #222222;
+    --primary-color: #999;
+}
+
+body {
+    background-color: var(--primary-background-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: 2px solid var(--border-color);
+    box-shadow: 5px 5px 10px white;
+    border-radius: 20px;
+}
+
+.box h2 {
+    margin-block: 10px;
+}

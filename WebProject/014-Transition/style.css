@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: steelblue;
+}
+
+.box {
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 3rem;
+    border-radius: 10%;
+    /* transition: .3s ease-in-out; */
+    transition-duration: 5s;
+    transition-property: color, transform, background-color, border-radius ;
+    transition-delay: .5s;
+    transition-timing-function: linear;
+}
+
+.box:hover {
+    color: black;
+    transform: rotate(180deg);
+    background-color: white;
+    border-radius: 50%;
+    transform: rotate(180deg);
+}
+
+/* 
+CSS tarnsitions allow you to change property vales, smoothly, over a given duration.
+
+To create a transition effect, you must specify two things: 
+	- the CSS property you want to add an effect to
+	- the duration of the effect
+
+Note: If the duration part is not specified, the transition will have no effect, because
+
+Attributes:
+- transition-delay
+- transition-duration
+- transition-property
+- transition-timing-function
+*/

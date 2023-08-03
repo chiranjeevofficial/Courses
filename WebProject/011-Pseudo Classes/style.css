@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-text-color: #111;
+}
+
+body {
+    background-color: #111;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+    color: #fff;
+}
+
+body * {
+    padding: 5px 0;
+}
+
+#primary-link:link {
+    color: red;
+}
+
+#primary-link:hover {
+    color: aqua;
+}
+
+#primary-link:visited {
+    color: #f1d2d2;
+}
+
+#primary-link:active {
+    color: #ff8500;
+}
+
+.root-list {
+    display: flex;
+    column-gap: 50px;
+}
+
+.root-list ul li:first-child {
+    color: red;
+}
+
+.root-list ul li:last-child {
+    color: blue;
+}
+
+.root-list ul li:nth-child(2n) {
+    color:aqua;
+}
+
+.root-list ul li:nth-child() {
+    color: #ff8500;
+}
+
+.root-list ul li:nth-child() {
+    color: #fff;
+}
+
+.root-list ul li:nth-child() {
+    color: #00ff00;
+}
+
+h2::first-letter {
+    color: red;
+    font-size: 2rem;
+}
+
+p::first-line {
+    color: #00ff00;
+}
+
+::selection {
+    color: black;
+    background-color: #ff0000;
+}
+
+/* before and after */
+h2::before {
+    content: "Namaste ";
+}
+
+h2::after {
+    content: " Coder";
+}
+
+/* 
+pseudo classes: A pseudo-class is used to define a special state of an element.
+    anchor tag have four states -
+        - :link
+        - :hover
+        - :visited
+        - :active
+    :first-child (when parent element have more than one child element and you want to select the first-child then, use it)
+    :last-child (for select the last-child)
+    :nth-child (for select the nth child "an+b", where a and b is constant and n is start from 0).
+
+pseudo-elements: A pseudo-eLement is used to style specified parts of an element.
+    ::first-letter
+    ::first-line
+    ::before
+    ::after
+*/
